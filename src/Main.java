@@ -12,7 +12,7 @@ public class Main {
         app_window.setSize(640,360);         //set size of GUI screen
 
         //creating sample text
-        JTextArea example_text = new JTextArea("Test number " + GetCPUINFO.test());
+        JTextArea example_text = new JTextArea("Test number ");
         example_text.setAlignmentX(0);
         example_text.setAlignmentY(0);
         example_text.setEditable(false);
