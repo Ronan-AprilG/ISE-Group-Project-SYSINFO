@@ -2,35 +2,49 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*; //this code library allows the creation of a window to be open
 
-enum MENUPAGE
-{
-    MAIN,
-    CPU,
-
-}
-
 public class Main extends JFrame{
-    MENUPAGE currentPage = MENUPAGE.MAIN;
     static JFrame app_window;
+    static JPanel pages;
+
+    //names of our pages use
+    public static final String MAIN_MENU_PAGE = "main_page";
+    public static final String CPU_PAGE = "cpu_page";
+
+    //creating constants to be referenced
+    public static final int WINDOW_HEIGHT = 360;
+    public static final int WINDOW_WIDTH = 640;
+
+    //this is a method to change what page is being displayed on the screen.
+    //you input the page name as an argument for this method when called
+    private static void changePage(String screen)
+    {
+        ((CardLayout) pages.getLayout()).show(pages,screen);
+    }
 
     public static void main(String[] args)
     {
+
+
+        //System.loadLibrary("sysinfo");
         /*
-        Here is the variables that iniitalise the different pages of the menu
-            Here we use swing's code library Jframe object to open up a new window. That window is stored in the variable app_window
-         */
+       we create a new window and store it in the app_window variables
+        we set it so that it closes when exited
+        */
+
         app_window = new JFrame("Team 7 SYSINFO");
         app_window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //make it so that the window is closed by exiting
-             //set size of GUI screen
+        //we store each of the pages of the application in a variable called pages using Swing's Cardlayout function
+        pages = new JPanel(new CardLayout());
+        pages.add(initMainMenu(),MAIN_MENU_PAGE); //we add each of the pages to the "book" persay stored in pages
+        pages.add(initCPUMenu(),CPU_PAGE); //the first argument is the method that creates the panel then its info is stored in a string
+        //we add the pages t
+        app_window.add(pages);
+        app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
+        app_window.setVisible(true); //this line makes the window visible
 
-        //creating sample text
-        initMainMenu();
-        app_window.setSize(640,360);
-        app_window.setVisible(true); //put this line at the END after you have added all your elements
 
-
-        }
-        static void initMainMenu()
+    }
+        static JPanel initMainMenu()
         {
             JPanel p = new JPanel();
             JButton cpu_button = new JButton("CPU");
@@ -39,25 +53,41 @@ public class Main extends JFrame{
             cpu_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
-                    p.removeAll();
-                    innitCPUMenu();
-                    p.revalidate();
-                    p.repaint();
-
+                    changePage(CPU_PAGE);
+                    /*p.removeAll();
+                    initCPUMenu();
+                    app_window.revalidate();
+                    app_window.repaint();
+                     */
                 }
             });
             cpu_button.setVisible(true);
             p.add(cpu_button);
-            app_window.add(p);
+            return p;
 
         }
-        static void innitCPUMenu()
+        static JPanel initCPUMenu()
         {
             JPanel p = new JPanel();
-            JLabel label = new JLabel("CPU LABEL");
+            JLabel label = new JLabel();
             label.setText("Your CPU is :3");
+            label.setVisible(true);
+
+            JButton back_button = new JButton("BACK");
+            back_button.setBounds(0,WINDOW_HEIGHT-60,120,60);
+
+            back_button.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    System.out.println("buttonpresses");
+                    changePage(MAIN_MENU_PAGE);
+
+                }
+            });
+            back_button.setVisible(true);
+            p.add(back_button);
+
             p.add(label);
-            app_window.add(p);
+            return p;
 
         }
 
