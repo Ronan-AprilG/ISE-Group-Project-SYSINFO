@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="89d3e3bf-3c1f-41ef-b82c-ac5e12c7249a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1MENUPAGE.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libsysinfo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/libsysinfo/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CpuInfo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.template.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/cpuInfo.java&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CpuInfo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.template.executor": "Run",
+    "Makefile Target.Makefile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/cpuInfo.java",
+    "onboarding.tips.debug.path": "C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
