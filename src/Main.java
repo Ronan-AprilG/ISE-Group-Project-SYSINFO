@@ -36,7 +36,8 @@ public class Main extends JFrame{
         //we store each of the pages of the application in a variable called pages using Swing's Cardlayout function
         pages = new JPanel(new CardLayout());
         pages.add(initMainMenu(),MAIN_MENU_PAGE); //we add each of the pages to the "book" persay stored in pages
-        pages.add(initCPUMenu(),CPU_PAGE); //the first argument is the method that creates the panel then its info is stored in a string
+        JPanel cpuPage = add_back_button(cpuMenu.initCPUMenu());
+        pages.add(cpuPage,CPU_PAGE); //the first argument is the method that creates the panel then its info is stored in a string
         //we add the pages t
         app_window.add(pages);
         app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
@@ -47,9 +48,12 @@ public class Main extends JFrame{
         static JPanel initMainMenu()
         {
             JPanel p = new JPanel();
+            ImageIcon img = new ImageIcon("src/bg.jpg");
+            p.setBackground(Color.BLUE);
+            
+            p.setLayout(null);
             JButton cpu_button = new JButton("CPU");
             cpu_button.setBounds(20,20,120,60);
-
             cpu_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
@@ -66,13 +70,8 @@ public class Main extends JFrame{
             return p;
 
         }
-        static JPanel initCPUMenu()
+        static JPanel add_back_button(JPanel panel)
         {
-            JPanel p = new JPanel();
-            JLabel label = new JLabel();
-            label.setText("Your CPU is :3");
-            label.setVisible(true);
-
             JButton back_button = new JButton("BACK");
             back_button.setBounds(0,WINDOW_HEIGHT-60,120,60);
 
@@ -84,11 +83,11 @@ public class Main extends JFrame{
                 }
             });
             back_button.setVisible(true);
-            p.add(back_button);
-
-            p.add(label);
-            return p;
-
+            panel.add(back_button);
+            return panel;
         }
 
     }
+/*
+
+ */
