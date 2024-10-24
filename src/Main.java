@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*; //this code library allows the creation of a window to be open
 
-public class Main extends JFrame{
+public class Main {
     static JFrame app_window;
     static JPanel pages;
 
@@ -23,9 +23,7 @@ public class Main extends JFrame{
 
     public static void main(String[] args)
     {
-
-
-        //System.loadLibrary("sysinfo");
+        System.loadLibrary("sysinfo");
         /*
        we create a new window and store it in the app_window variables
         we set it so that it closes when exited
@@ -47,26 +45,53 @@ public class Main extends JFrame{
     }
         static JPanel initMainMenu()
         {
+
             JPanel p = new JPanel();
             ImageIcon img = new ImageIcon("src/bg.jpg");
-            p.setBackground(Color.BLUE);
-            
+            p.setBackground(Color.DARK_GRAY);
             p.setLayout(null);
-            JButton cpu_button = new JButton("CPU");
-            cpu_button.setBounds(20,20,120,60);
+
+            JLabel title = new JLabel("Team 7's SYSINFO PROGRAM");
+            title.setBounds(WINDOW_WIDTH/2,20,400,40);
+            title.setAlignmentX(SwingConstants.CENTER);
+            p.add(title);
+
+            JButton cpu_button = new JButton("CPU info");
+            cpu_button.setBounds(30,60,240,100);
             cpu_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
                     changePage(CPU_PAGE);
-                    /*p.removeAll();
-                    initCPUMenu();
-                    app_window.revalidate();
-                    app_window.repaint();
-                     */
                 }
             });
-            cpu_button.setVisible(true);
             p.add(cpu_button);
+            JButton pci_button = new JButton("PCI info");
+            pci_button.setBounds(WINDOW_WIDTH-270,60,240,100);
+            pci_button.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    System.out.println("buttonpresses");
+                    changePage(CPU_PAGE);
+                }
+            });
+            p.add(pci_button);
+            JButton disk_button = new JButton("Disk info");
+            disk_button.setBounds(30,180,240,100);
+            disk_button.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    System.out.println("buttonpresses");
+                    changePage(CPU_PAGE);
+                }
+            });
+            p.add(disk_button);
+            JButton usb_button = new JButton("USB info");
+            usb_button.setBounds(WINDOW_WIDTH-270,180,240,100);
+            usb_button.addActionListener(new ActionListener(){
+                public void actionPerformed(ActionEvent e){
+                    System.out.println("buttonpresses");
+                    changePage(CPU_PAGE);
+                }
+            });
+            p.add(usb_button);
             return p;
 
         }

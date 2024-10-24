@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89d3e3bf-3c1f-41ef-b82c-ac5e12c7249a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cpuMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpuMenu2.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpuMenu2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/GetCPUINFO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetCPUINFO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpuMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CpuInfo.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.template.executor": "Run",
-    "Makefile Target.Makefile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/pciInfo.java",
-    "onboarding.tips.debug.path": "C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CpuInfo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.template.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.Makefile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.run.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/April2/Desktop/Progamming/ISE-Group-Project-SYSINFO/src/template.java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/bluer/IdeaProjects/ISE group project SYSINFO/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ISE group project SYSINFO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
