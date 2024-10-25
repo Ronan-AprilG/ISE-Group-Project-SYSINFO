@@ -20,7 +20,15 @@ public class cpuMenu {
         label2.setText("The amount of sockets on this computer is " + cpu.socketCount() + " with " + cpu.coresPerSocket() + " cores per socket.");
         label2.setBounds(0,16,600,16);
         p.add(label2);
+
         return p;
 
+    }
+    static double calcCPUUseage()
+    {
+        cpuInfo cpu = new cpuInfo();
+        cpu.read(1);
+        double percent = cpu.getUserTime(1) / cpu.getSystemTime(1) * 100;
+        return percent;
     }
 }

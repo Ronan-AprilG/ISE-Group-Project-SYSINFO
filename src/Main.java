@@ -28,6 +28,7 @@ public class Main {
        we create a new window and store it in the app_window variables
         we set it so that it closes when exited
         */
+        cpuInfo cpu = new cpuInfo();
 
         app_window = new JFrame("Team 7 SYSINFO");
         app_window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //make it so that the window is closed by exiting
@@ -41,6 +42,14 @@ public class Main {
         app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         app_window.setVisible(true); //this line makes the window visible
 
+        diskInfo disk = new diskInfo();
+        System.out.println(disk.diskCount());
+        while(true)
+        {
+
+
+
+        }
 
     }
         static JPanel initMainMenu()
