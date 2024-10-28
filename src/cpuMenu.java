@@ -1,9 +1,11 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class cpuMenu {
     //declare constants
     public static final int WINDOW_HEIGHT = 360;
     public static final int WINDOW_WIDTH = 640;
+
     static JPanel initCPUMenu()
     {
         cpuInfo cpu = new cpuInfo();

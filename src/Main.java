@@ -9,11 +9,12 @@ public class Main {
     //names of our pages use
     public static final String MAIN_MENU_PAGE = "main_page";
     public static final String CPU_PAGE = "cpu_page";
-
+    public static final String PCI_MENU = "pci_page";
+    public static final String USB_PAGE = "usb_page";
     //creating constants to be referenced
-    public static final int WINDOW_HEIGHT = 360;
-    public static final int WINDOW_WIDTH = 640;
-
+    public static final int WINDOW_HEIGHT = 720;
+    public static final int WINDOW_WIDTH = 1280;
+    static String currentpage = MAIN_MENU_PAGE;
     //this is a method to change what page is being displayed on the screen.
     //you input the page name as an argument for this method when called
     private static void changePage(String screen)
@@ -23,6 +24,7 @@ public class Main {
 
     public static void main(String[] args)
     {
+
         System.loadLibrary("sysinfo");
         /*
        we create a new window and store it in the app_window variables
@@ -37,6 +39,10 @@ public class Main {
         pages.add(initMainMenu(),MAIN_MENU_PAGE); //we add each of the pages to the "book" persay stored in pages
         JPanel cpuPage = add_back_button(cpuMenu.initCPUMenu());
         pages.add(cpuPage,CPU_PAGE); //the first argument is the method that creates the panel then its info is stored in a string
+        JPanel pciPage = add_back_button(PCImenu.initPCImenu());
+        pages.add(pciPage,PCI_MENU);
+        JPanel usbPage = add_back_button(usbMenu.initusbMenu());
+        pages.add(usbPage,USB_PAGE);
         //we add the pages t
         app_window.add(pages);
         app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
@@ -46,8 +52,13 @@ public class Main {
         System.out.println(disk.diskCount());
         while(true)
         {
-
-
+            switch(currentpage)
+            {
+                case CPU_PAGE: //update for cpu usage
+                    //JPanel
+                    //System.out.println(cpuMenu.calcCPUUseage());
+                    break;
+            }
 
         }
 
@@ -71,6 +82,7 @@ public class Main {
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
                     changePage(CPU_PAGE);
+                    currentpage = CPU_PAGE;
                 }
             });
             p.add(cpu_button);
@@ -79,7 +91,7 @@ public class Main {
             pci_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
-                    changePage(CPU_PAGE);
+                    changePage(PCI_MENU);
                 }
             });
             p.add(pci_button);
@@ -97,7 +109,7 @@ public class Main {
             usb_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
-                    changePage(CPU_PAGE);
+                    changePage(USB_PAGE);
                 }
             });
             p.add(usb_button);

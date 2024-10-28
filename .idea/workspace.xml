@@ -15,11 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpuMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpuMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diskInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libsysinfo/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/libsysinfo/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libsysinfo/cpuInfo.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/libsysinfo/cpuInfo.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libsysinfo/pciInfo.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/libsysinfo/pciInfo.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libsysinfo/usbInfo.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/libsysinfo/usbInfo.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
