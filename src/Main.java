@@ -11,6 +11,7 @@ public class Main {
     public static final String CPU_PAGE = "cpu_page";
     public static final String PCI_MENU = "pci_page";
     public static final String USB_PAGE = "usb_page";
+    public static final String DISK_PAGE = "disk_page";
     //creating constants to be referenced
     public static final int WINDOW_HEIGHT = 720;
     public static final int WINDOW_WIDTH = 1280;
@@ -43,6 +44,8 @@ public class Main {
         pages.add(pciPage,PCI_MENU);
         JPanel usbPage = add_back_button(usbMenu.initusbMenu());
         pages.add(usbPage,USB_PAGE);
+        JPanel diskPage = add_back_button(diskMenu.innitDiskMenu());
+        pages.add(diskPage,DISK_PAGE);
         //we add the pages t
         app_window.add(pages);
         app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
@@ -100,7 +103,7 @@ public class Main {
             disk_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
-                    changePage(CPU_PAGE);
+                    changePage(DISK_PAGE);
                 }
             });
             p.add(disk_button);

@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89d3e3bf-3c1f-41ef-b82c-ac5e12c7249a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/diskMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/cpuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ISE group project SYSINFO/cpuMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main$3.class" afterDir="false" />
@@ -15,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpuMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpuMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usbMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/usbMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
