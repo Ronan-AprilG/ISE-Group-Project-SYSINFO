@@ -71,16 +71,24 @@ public class Main {
 
             JPanel p = new JPanel();
             ImageIcon img = new ImageIcon("src/bg.jpg");
-            p.setBackground(Color.DARK_GRAY);
+            p.setBackground(Color.BLACK);
             p.setLayout(null);
 
             JLabel title = new JLabel("Team 7's SYSINFO PROGRAM");
             title.setBounds(WINDOW_WIDTH/2,20,400,40);
             title.setAlignmentX(SwingConstants.CENTER);
+            memInfo mem = new memInfo();
+            mem.read();
+            JLabel memorylabel = new JLabel("Memory used " + mem.getUsed()+"/"+mem.getTotal());
+            memorylabel.setBounds(WINDOW_WIDTH/2-200,300,400,80);
+            Font font = new Font("monospace", Font.PLAIN,25);
+            memorylabel.setFont(font);
+            memorylabel.setForeground(Color.GREEN);
+            p.add(memorylabel);
             p.add(title);
 
             JButton cpu_button = new JButton("CPU info");
-            cpu_button.setBounds(30,60,240,100);
+            cpu_button.setBounds(100,60,240,100);
             cpu_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
@@ -90,7 +98,7 @@ public class Main {
             });
             p.add(cpu_button);
             JButton pci_button = new JButton("PCI info");
-            pci_button.setBounds(WINDOW_WIDTH-270,60,240,100);
+            pci_button.setBounds(WINDOW_WIDTH-340,60,240,100);
             pci_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
@@ -99,7 +107,7 @@ public class Main {
             });
             p.add(pci_button);
             JButton disk_button = new JButton("Disk info");
-            disk_button.setBounds(30,180,240,100);
+            disk_button.setBounds(100,280,240,100);
             disk_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
@@ -108,7 +116,7 @@ public class Main {
             });
             p.add(disk_button);
             JButton usb_button = new JButton("USB info");
-            usb_button.setBounds(WINDOW_WIDTH-270,180,240,100);
+            usb_button.setBounds(WINDOW_WIDTH-340,280,240,100);
             usb_button.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
