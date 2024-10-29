@@ -39,7 +39,7 @@ public class PCImenu {
 
 
 
-        Font font = new Font("monospace", Font.PLAIN,15); // font style and type
+        Font font = new Font("monospace", Font.PLAIN,10); // font style and type
         labelHeader.setFont(font);
         labelHeader2.setFont(font);
         label.setFont(font);

@@ -31,6 +31,13 @@ public class cpuMenu {
         label4.setForeground(Color.green);
         label5.setForeground(Color.green);
         label6.setForeground(Color.green);
+        Font font = new Font("monospace", Font.PLAIN,15);
+        label.setFont(font);
+        label2.setFont(font);
+        label3.setFont(font);
+        label4.setFont(font);
+        label5.setFont(font);
+        label6.setFont(font);
         p.add(label);
         p.add(label2);
         p.add(label3);

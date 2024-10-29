@@ -13,9 +13,8 @@ public class Main {
     public static final String USB_PAGE = "usb_page";
     public static final String DISK_PAGE = "disk_page";
     //creating constants to be referenced
-    public static final int WINDOW_HEIGHT = 720;
+    public static final int WINDOW_HEIGHT = 600;
     public static final int WINDOW_WIDTH = 1280;
-    static String currentpage = MAIN_MENU_PAGE;
     //this is a method to change what page is being displayed on the screen.
     //you input the page name as an argument for this method when called
     private static void changePage(String screen)
@@ -46,31 +45,20 @@ public class Main {
         pages.add(usbPage,USB_PAGE);
         JPanel diskPage = add_back_button(diskMenu.innitDiskMenu());
         pages.add(diskPage,DISK_PAGE);
-        //we add the pages t
+        //we add the pages to the JFRAME appwindow
         app_window.add(pages);
         app_window.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         app_window.setVisible(true); //this line makes the window visible
 
         diskInfo disk = new diskInfo();
         System.out.println(disk.diskCount());
-        while(true)
-        {
-            switch(currentpage)
-            {
-                case CPU_PAGE: //update for cpu usage
-                    //JPanel
-                    //System.out.println(cpuMenu.calcCPUUseage());
-                    break;
-            }
-
-        }
 
     }
         static JPanel initMainMenu()
         {
 
             JPanel p = new JPanel();
-            ImageIcon img = new ImageIcon("src/bg.jpg");
+
             p.setBackground(Color.BLACK);
             p.setLayout(null);
 
@@ -93,7 +81,7 @@ public class Main {
                 public void actionPerformed(ActionEvent e){
                     System.out.println("buttonpresses");
                     changePage(CPU_PAGE);
-                    currentpage = CPU_PAGE;
+
                 }
             });
             p.add(cpu_button);
